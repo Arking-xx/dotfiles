@@ -1,0 +1,45 @@
+" Enable line numbers
+set number
+
+" Leader
+let mapleader = " "
+
+" leader shortcut
+map <Leader>w :action SaveAll<CR>
+map <Leader>q :action Exit<CR>
+map <Leader>f :action GotoFile<CR>
+map <Leader>t :action ActivateProjectToolWindow<CR>
+
+
+
+
+"tab navigation
+map <Leader>l :action NextTab<CR>
+map <Leader>h :action PreviousTab<CR>
+map <Leader>c :action CloseContent<CR>
+
+"show info
+ map <Leader>i :action ShowHoverInfo<CR>
+
+" escape insert mode
+inoremap jj <Esc>
+
+" Better search
+set ignorecase
+set smartcase
+set incsearch
+
+" IdeaVim specific features
+set ideajoin
+set ideastatusicon=gray
+set idearefactormode=keep
+set relativenumber
+
+" Some trl+n to toggle tree
+map <C-n> :action NewElement<CR>
+
+" s for horizontal split window , i for vertical split
+" o for open forlder
+set NERDTree
+
+set visualbell
